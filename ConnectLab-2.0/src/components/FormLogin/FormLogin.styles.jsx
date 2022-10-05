@@ -9,6 +9,7 @@ export const FundoStyled = styled.main`
     padding-top: 1%;
     padding-left: 4%;
     padding-right: 4%;
+    text-align: center;
 `
 
 export const BemVindoStyled = styled.h1`
@@ -18,12 +19,14 @@ export const BemVindoStyled = styled.h1`
     color: black;
     margin-top: 4%;
     margin-bottom: 14%;
+    text-align: start;
 `
 
 export const DivInputStyled = styled.div`
     margin-top: 10%;
     display: flex;
     flex-direction: column;
+    text-align: start;
 `
 
 export const LabelStyled = styled.label`
@@ -45,6 +48,32 @@ export const InputStyled = styled.input`
     height: 36px;
 `
 
-export const DivSenhaStyled = styled.div`
-    
+export const EsqueciSenhaStyled = styled.p`
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin-top: 7%;
+    cursor: pointer;
+    text-align: start;
+    width: 37%;
+
+    :hover{
+        color: #22577A;
+    }
+`
+
+export const BtnLogarStyled = styled.button`
+    background: #22577A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 44px;
+    margin-top: 7%;
 `

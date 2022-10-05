@@ -1,5 +1,5 @@
 import { TopLogo } from "../TopLogo/TopLogo";
-import { BemVindoStyled, DivInputStyled, DivSenhaStyled, FundoStyled, InputStyled, LabelStyled } from "./FormLogin.styles"
+import { BemVindoStyled, BtnLogarStyled, DivInputStyled, EsqueciSenhaStyled, FundoStyled, InputStyled, LabelStyled } from "./FormLogin.styles"
 
 export const FormLogin = () => {
     return(
@@ -12,11 +12,10 @@ export const FormLogin = () => {
             </DivInputStyled>
             <DivInputStyled>
                 <LabelStyled>Senha</LabelStyled>
-                <DivSenhaStyled>
-                   <InputStyled type="password" placeholder="Sua senha"/> 
-                   <img src=""/>
-                </DivSenhaStyled>
+                <InputStyled type="password" placeholder="Sua senha"></InputStyled>
             </DivInputStyled>
+            <EsqueciSenhaStyled>Esqueci a senha</EsqueciSenhaStyled>
+            <BtnLogarStyled>Login</BtnLogarStyled>
         </FundoStyled>
     );
 };
