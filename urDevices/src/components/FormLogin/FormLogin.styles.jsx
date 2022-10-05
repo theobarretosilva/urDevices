@@ -5,7 +5,7 @@ export const FundoStyled = styled.main`
     top: 0;
     left: 0;
     bottom: 0;
-    width: 25%;
+    width: 26%;
     padding-top: 1%;
     padding-left: 4%;
     padding-right: 4%;
@@ -76,4 +76,27 @@ export const BtnLogarStyled = styled.button`
     width: 250px;
     height: 44px;
     margin-top: 7%;
+    margin-bottom: 10%;
+`
+
+export const DivLoginGoogleStyled = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+export const LinhaStyled = styled.div`
+    height: 1px;
+    width: 45px;
+    background: #787878;
+`
+
+export const PGoogleStyled = styled.p`
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #787878;
+    margin: 0;
+    top: 0;
+    padding-left: 2%;
+    padding-right: 2%;
 `
