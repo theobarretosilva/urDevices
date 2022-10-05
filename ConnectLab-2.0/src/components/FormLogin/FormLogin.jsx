@@ -1,11 +1,15 @@
-import { DivLogoStyled, FundoStyled, Logo1Styled } from "./FormLogin.styles"
+import { TopLogo } from "../TopLogo/TopLogo";
+import { BemVindoStyled, DivInputStyled, FundoStyled, LabelStyled } from "./FormLogin.styles"
 
 export const FormLogin = () => {
     return(
         <FundoStyled>
-            <DivLogoStyled>
-                <Logo1Styled src="../../src/assets/imgs/logo1.png" alt="Logo Connect Lab"/>
-            </DivLogoStyled>
+            <TopLogo />
+            <BemVindoStyled>Bem-vindo(a) de volta!</BemVindoStyled>
+            <DivInputStyled>
+                <LabelStyled>E-mail</LabelStyled>
+                
+            </DivInputStyled>
         </FundoStyled>
     );
 };
