@@ -76,12 +76,13 @@ export const BtnLogarStyled = styled.button`
     width: 250px;
     height: 44px;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 `
 
 export const DivLoginGoogleStyled = styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: 6%;
 `
 
 export const LinhaStyled = styled.div`
@@ -99,4 +100,7 @@ export const PGoogleStyled = styled.p`
     top: 0;
     padding-left: 2%;
     padding-right: 2%;
+`
+
+export const PCadastreseStyled = styled.p`
 `
