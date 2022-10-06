@@ -5,6 +5,7 @@ export const FundoStyled = styled.main`
     top: 0;
     left: 0;
     bottom: 0;
+    position: fixed;
     width: 26%;
     padding-top: 1%;
     padding-left: 4%;
@@ -18,7 +19,7 @@ export const BemVindoStyled = styled.h1`
     font-size: 26px;
     color: black;
     margin-top: 4%;
-    margin-bottom: 14%;
+    margin-bottom: 12%;
     text-align: start;
 `
 
@@ -60,13 +61,14 @@ export const EsqueciSenhaStyled = styled.p`
 
     :hover{
         color: #22577A;
+        text-decoration: underline;
     }
 `
 
 export const BtnLogarStyled = styled.button`
     background: #22577A;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 21px;
@@ -76,13 +78,17 @@ export const BtnLogarStyled = styled.button`
     width: 250px;
     height: 44px;
     margin-top: 7%;
-    margin-bottom: 6%;
+    margin-bottom: 7%;
+
+    :hover{
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    }
 `
 
 export const DivLoginGoogleStyled = styled.div`
     display: flex;
     align-items: center;
-    margin-bottom: 6%;
+    margin-bottom: 7%;
 `
 
 export const LinhaStyled = styled.div`
@@ -103,4 +109,19 @@ export const PGoogleStyled = styled.p`
 `
 
 export const PCadastreseStyled = styled.p`
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-top: 10%;
+    margin-bottom: 1%;
+`
+
+export const SpanCadastreseStyled = styled.span`
+    color: #22577A;
+    cursor: pointer;
+
+    :hover{
+        text-decoration: underline;
+    }
 `

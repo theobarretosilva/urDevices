@@ -1,10 +1,8 @@
 import './App.css'
-import { TelaLogin } from './pages/TelaLogin';
+import { AppRoutes } from './routes/routes'
 
 function App() {
-  return (
-    <TelaLogin />
-  );
+  return <AppRoutes />
 };
 
 export default App;

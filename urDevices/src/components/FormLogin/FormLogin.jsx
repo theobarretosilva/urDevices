@@ -1,9 +1,8 @@
+import GoogleLogin from "react-google-login";
 import { TopLogo } from "../TopLogo/TopLogo";
-import { BemVindoStyled, BtnLogarStyled, DivInputStyled, EsqueciSenhaStyled, FundoStyled, InputStyled, LabelStyled, LinhaStyled, PGoogleStyled, DivLoginGoogleStyled } from "./FormLogin.styles"
-import GoogleLogin from 'react-google-login';
+import { BemVindoStyled, BtnLogarStyled, DivInputStyled, EsqueciSenhaStyled, FundoStyled, InputStyled, LabelStyled, LinhaStyled, PGoogleStyled, DivLoginGoogleStyled, PCadastreseStyled, SpanCadastreseStyled } from "./FormLogin.styles"
 
 export const FormLogin = () => {
-
     const responseGoogle = (response) => {
         console.log(response)
     }
@@ -16,16 +15,18 @@ export const FormLogin = () => {
         <FundoStyled>
             <TopLogo />
             <BemVindoStyled>Bem-vindo(a) de volta!</BemVindoStyled>
-            <DivInputStyled>
-                <LabelStyled>E-mail</LabelStyled>
-                <InputStyled type="email" placeholder="Seu email"/>
-            </DivInputStyled>
-            <DivInputStyled>
-                <LabelStyled>Senha</LabelStyled>
-                <InputStyled type="password" placeholder="Sua senha"></InputStyled>
-            </DivInputStyled>
-            <EsqueciSenhaStyled>Esqueci a senha</EsqueciSenhaStyled>
-            <BtnLogarStyled>Login</BtnLogarStyled>
+            <form>
+                <DivInputStyled>
+                    <LabelStyled>E-mail</LabelStyled>
+                    <InputStyled type="email" placeholder="Seu email"/>
+                </DivInputStyled>
+                <DivInputStyled>
+                    <LabelStyled>Senha</LabelStyled>
+                    <InputStyled type="password" placeholder="Sua senha"></InputStyled>
+                </DivInputStyled>
+                <EsqueciSenhaStyled>Esqueci a senha</EsqueciSenhaStyled>
+                <BtnLogarStyled>Login</BtnLogarStyled>
+            </form>
             <DivLoginGoogleStyled>
                 <LinhaStyled />
                 <PGoogleStyled>Ou faça login com a sua conta Google</PGoogleStyled>
@@ -37,6 +38,7 @@ export const FormLogin = () => {
                 onSuccess={responseGoogle}
                 onFailure={googleErro}
             />
+            <PCadastreseStyled>Não tem uma conta? <SpanCadastreseStyled>Cadastre-se</SpanCadastreseStyled></PCadastreseStyled>
         </FundoStyled>
     );
 };
