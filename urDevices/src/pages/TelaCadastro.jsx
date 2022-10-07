@@ -1,3 +1,5 @@
+import { MainCadastro } from "../components/MainCadastro/MainCadastro"
+
 export const TelaCadastro = () => {
-    return <h1>Tela de cadastro</h1>
+    return <MainCadastro />
 }
