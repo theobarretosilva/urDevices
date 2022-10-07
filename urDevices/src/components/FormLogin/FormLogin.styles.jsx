@@ -1,16 +1,22 @@
 import styled from "styled-components";
 
+export const DivGeralLoginStyled = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 export const FundoStyled = styled.main`
     background: white;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    position: fixed;
-    width: 26%;
-    padding-top: 1%;
-    padding-left: 4%;
-    padding-right: 4%;
+    border-radius: 30px;
+    width: 36%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 
 export const BemVindoStyled = styled.h1`
@@ -88,29 +94,6 @@ export const BtnLogarStyled = styled.button`
     }
 `
 
-export const DivLoginGoogleStyled = styled.div`
-    display: flex;
-    align-items: center;
-    margin-bottom: 7%;
-`
-
-export const LinhaStyled = styled.div`
-    height: 1px;
-    width: 45px;
-    background: #787878;
-`
-
-export const PGoogleStyled = styled.p`
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #787878;
-    margin: 0;
-    top: 0;
-    padding-left: 2%;
-    padding-right: 2%;
-`
-
 export const PCadastreseStyled = styled.p`
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -127,4 +110,17 @@ export const SpanCadastreseStyled = styled.span`
     :hover{
         text-decoration: underline;
     }
+`
+
+export const InputLoginStyled = styled.input`
+    background: white;
+    border: 2px solid #38A3A5;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    height: 36px;
+    width: 80%;
+    padding-left: 2%;
 `
