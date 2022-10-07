@@ -34,3 +34,10 @@ export const PCadastreStyled = styled.p`
     color: black;
     margin-top: 0.8%;
 `
+
+export const FacaLoginStyled = styled.p`
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+`

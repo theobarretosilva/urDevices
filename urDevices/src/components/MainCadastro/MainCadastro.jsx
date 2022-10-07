@@ -1,6 +1,7 @@
 import { FormCadastro } from "../FormCadastro/FormCadastro"
+import { SpanCadastreseStyled } from "../FormLogin/FormLogin.styles"
 import { TopLogo } from "../TopLogo/TopLogo"
-import { BemVindoStyled, MainFundoCadastroStyled, MainGeralStyled, PCadastreStyled } from "./MainCadastro.styles"
+import { BemVindoStyled, FacaLoginStyled, MainFundoCadastroStyled, MainGeralStyled, PCadastreStyled } from "./MainCadastro.styles"
 
 export const MainCadastro = () => {
     
@@ -11,6 +12,7 @@ export const MainCadastro = () => {
                 <BemVindoStyled>Bem vindo(a)!</BemVindoStyled>
                 <PCadastreStyled>Cadastre-se para poder usar o nosso serviço!</PCadastreStyled>
                 <FormCadastro />
+                <FacaLoginStyled>Já tem uma conta? <SpanCadastreseStyled>Cadastre-se!</SpanCadastreseStyled></FacaLoginStyled>
             </MainFundoCadastroStyled>
         </MainGeralStyled>
     )

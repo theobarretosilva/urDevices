@@ -35,6 +35,8 @@ export const LabelStyled = styled.label`
     font-weight: 500;
     font-size: 19px;
     color: black;
+    text-align: start;
+    display: flex;
 `
 
 export const InputStyled = styled.input`
@@ -45,8 +47,9 @@ export const InputStyled = styled.input`
     font-weight: 400;
     font-size: 15px;
     color: black;
-    padding-left: 4%;
     height: 36px;
+    width: 80%;
+    padding-left: 2%;
 `
 
 export const EsqueciSenhaStyled = styled.p`
@@ -75,10 +78,10 @@ export const BtnLogarStyled = styled.button`
     color: white;
     border: none;
     cursor: pointer;
-    width: 250px;
+    width: 280px;
     height: 44px;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 5%;
+    margin-bottom: 1%;
 
     :hover{
         box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
