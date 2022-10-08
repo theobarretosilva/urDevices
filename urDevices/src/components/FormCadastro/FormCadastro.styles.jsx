@@ -40,3 +40,16 @@ export const Div1Styled = styled.div`
     padding: 0;
     width: 92%;
 `
+
+export const InputStyled = styled.input`
+    background: white;
+    border: 2px solid #38A3A5;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    height: 36px;
+    width: 80%;
+    padding-left: 2%;
+`

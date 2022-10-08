@@ -1,5 +1,5 @@
-import { BtnLogarStyled, InputStyled, LabelStyled } from "../FormLogin/FormLogin.styles"
-import { Div1Styled, DivDentroInputStyled, DivGeralStyled, DivInputStyled, SelectStyled } from "./FormCadastro.styles"
+import { BtnLogarStyled, LabelStyled } from "../FormLogin/FormLogin.styles"
+import { Div1Styled, DivDentroInputStyled, DivGeralStyled, DivInputStyled, SelectStyled, InputStyled } from "./FormCadastro.styles"
 
 export const FormCadastro = () => {
     return(
