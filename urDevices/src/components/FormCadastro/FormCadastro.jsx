@@ -1,7 +1,34 @@
-import { BtnLogarStyled, LabelStyled } from "../FormLogin/FormLogin.styles"
-import { Div1Styled, DivDentroInputStyled, DivGeralStyled, DivInputStyled, SelectStyled, InputStyled } from "./FormCadastro.styles"
+import { useState } from "react";
+import { BtnLogarStyled, LabelStyled } from "../FormLogin/FormLogin.styles";
+import { Div1Styled, DivDentroInputStyled, DivGeralStyled, DivInputStyled, SelectStyled, InputStyled } from "./FormCadastro.styles";
+import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../service/firebase-config';
 
 export const FormCadastro = () => {
+    const [registerEmail, setRegisterEmail] = useState("");
+    const [registerPassword, setRegisterPassword] = useState("");
+    
+    // eslint-disable-next-line no-unused-vars
+    const [user, setUser] = useState({});
+    onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
+        
+    })
+
+    const register = async (event) => {
+        event.preventDefault();
+        try{
+            const user = await createUserWithEmailAndPassword(
+                auth,
+                registerEmail,
+                registerPassword
+            );
+            console.log(user);
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
     return(
         <DivGeralStyled>
             <form>
@@ -18,7 +45,13 @@ export const FormCadastro = () => {
                 <DivInputStyled>
                     <DivDentroInputStyled>
                         <LabelStyled>E-mail *</LabelStyled>
-                        <InputStyled type={"email"} placeholder="Ex: email@teste.com" />
+                        <InputStyled
+                            type={"email"}
+                            placeholder="Ex: email@teste.com"
+                            onChange={(event) => {
+                                setRegisterEmail(event.target.value)
+                            }}
+                        />
                     </DivDentroInputStyled>
                     <DivDentroInputStyled>
                         <LabelStyled>Link da foto de perfil</LabelStyled>
@@ -72,7 +105,13 @@ export const FormCadastro = () => {
                 <DivInputStyled>
                     <DivDentroInputStyled>
                         <LabelStyled>Senha *</LabelStyled>
-                        <InputStyled type={"password"} placeholder="Ex: Sua senha" />
+                        <InputStyled
+                            type={"password"}
+                            placeholder="Ex: Sua senha"
+                            onChange={(event) => {
+                                setRegisterPassword(event.target.value)
+                            }}
+                        />
                     </DivDentroInputStyled>
                     <DivDentroInputStyled>
                         <LabelStyled>Confirme sua senha *</LabelStyled>
@@ -80,7 +119,7 @@ export const FormCadastro = () => {
                     </DivDentroInputStyled>
                 </DivInputStyled>
                 <Div1Styled>
-                    <BtnLogarStyled>Cadastrar</BtnLogarStyled>
+                    <BtnLogarStyled onClick={register}>Cadastrar</BtnLogarStyled>
                 </Div1Styled>
             </form>
         </DivGeralStyled>

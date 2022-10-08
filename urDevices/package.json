@@ -11,7 +11,7 @@
     "lint": "eslint src/**/*.{js,jsx}"
   },
   "dependencies": {
-    "firebase": "^9.10.0",
+    "firebase": "^9.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-login": "^5.2.2",
